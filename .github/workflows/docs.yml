@@ -1,29 +1,29 @@
-name: Docs
+# name: Docs
 
-on:
-  push:
-    branches: ['main']
+# on:
+#   push:
+#     branches: ['main']
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
+#     steps:
+#       - uses: actions/checkout@v2
+#       - uses: actions/setup-python@v2
 
-      - name: Install Poetry
-        uses: abatilo/actions-poetry@v2.1.2
+#       - name: Install Poetry
+#         uses: abatilo/actions-poetry@v2.1.2
 
-      - name: Install dependencies
-        run: poetry install
+#       - name: Install dependencies
+#         run: poetry install
 
-      - name: Build docs
-        run: poetry run sphinx-build -b html docs docs/_build
+#       - name: Build docs
+#         run: poetry run sphinx-build -b html docs docs/_build
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          publish_dir: ./docs/_build
-          cname: github.com/WeenSpace/weenspace-django-jwt
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+#       - name: Deploy to GitHub Pages
+#         uses: peaceiris/actions-gh-pages@v3
+#         with:
+#           publish_dir: ./docs/_build
+#           cname: github.com/WeenSpace/weenspace-django-jwt
+#           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
