@@ -9,8 +9,8 @@ Django GraphQL JWT
 .. _JSON Web Token: https://jwt.io/
 .. _Django GraphQL: https://github.com/graphql-python/graphene-django
 
-.. |Test| image:: https://github.com/flavors/weenspace-django-jwt/actions/workflows/test-suite.yml/badge.svg
-   :target: https://github.com/flavors/weenspace-django-jwt/actions
+.. |Test| image:: https://github.com/WeenSpace/weenspace-django-jwt/actions/workflows/test-suite.yml/badge.svg
+   :target: https://github.com/WeenSpace/weenspace-django-jwt/actions
    :alt: Test
 
 .. |Codecov| image:: https://img.shields.io/codecov/c/github/flavors/weenspace-django-jwt?color=%2334D058

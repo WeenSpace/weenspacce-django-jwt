@@ -7,8 +7,8 @@
     <br>Fantastic <strong>documentation</strong> is available at <a href="https://github.com/WeenSpace/weenspace-django-jwt">https://github.com/WeenSpace/weenspace-django-jwt</a>.
 </p>
 <p align="center">
-    <a href="https://github.com/flavors/weenspace-django-jwt/actions">
-        <img src="https://github.com/flavors/weenspace-django-jwt/actions/workflows/test-suite.yml/badge.svg" alt="Test">
+    <a href="https://github.com/WeenSpace/weenspace-django-jwt/actions">
+        <img src="https://github.com/WeenSpace/weenspace-django-jwt/actions/workflows/test-suite.yml/badge.svg" alt="Test">
     </a>
     <a href="https://codecov.io/gh/flavors/weenspace-django-jwt">
         <img src="https://img.shields.io/codecov/c/github/flavors/weenspace-django-jwt?color=%2334D058" alt="Coverage">
