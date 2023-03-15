@@ -1,0 +1,59 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "weenspace-django-jwt"
+version = "1.0.1"
+description = "JSON Web Token for Django REST and GraphQL."
+license = "MIT"
+authors = ["Huynh Doan Thinh <hdthinh@gmail.com>"]
+readme = "README.md"
+include = ["LICENSE", "README.md"]
+keywords = ["django", "jwt", "API", "REST", "GraphQL"]
+
+homepage = "https://github.com/WeenSpace/weenspacce-django-jwt"
+repository = "https://github.com/WeenSpace/weenspacce-django-jwt"
+documentation = "https://github.com/WeenSpace/weenspacce-django-jwt"
+
+packages = [
+    { include = "django_jwt" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10.0"
+
+Django = ">=4.0.0"
+graphene = ">=2.1.5"
+graphene-django = ">=2.0.0"
+PyJWT = ">=2,<3"
+
+[tool.poetry.dev-dependencies]
+black = "*"
+codecov = "*"
+cryptography = "*"
+flake8 = "*"
+isort = "*"
+pytest = "*"
+pytest-cov = "*"
+pytest-django = "*"
+sphinx = "*"
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "tests.settings"
+
+[tool.black]
+extend-exclude = '''
+/(
+  | .htmlcov
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+skip = "migrations"
+default_section = "THIRDPARTY"
+known_django = "django"
+known_first_party = "django_jwt"
+sections = "FUTURE,STDLIB,DJANGO,THIRDPARTY,FIRSTPARTY,LOCALFOLDER"
