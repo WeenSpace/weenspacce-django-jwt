@@ -4,7 +4,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "weenspace-django-jwt"
-version = "1.0.0"
+version = "1.0.1"
 description = "JSON Web Token for Django REST and GraphQL."
 license = "MIT"
 authors = ["Huynh Doan Thinh <hdthinh@gmail.com>"]
